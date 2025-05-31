@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="headindex">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="garrett-parker-DlkF4-dbCOU-unsplash.jpg" type="image/x-icon" sizes="32*32">
+  <title>Home</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <div class="headelement">
+    <h1 id="headelement">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTravel Planner  <button onclick="weatherindex()" title="Hey! check the city weather before travel" id="weathers">Weather Lookup  🌤️ </button></h1>
+  </div>
+  
+
+  
+</head>
+<body>
+  <div class="top">
+    <div class="main">
+      <div class="ptrips">
+        <h2>Planned Trips</h2>
+        <hr>
+        <ul id="trip-list"></ul>
+      </div>
+      
+      <div class="container">
+        <h1>My Travel Planner</h1>
+        <hr>
+        
+        <form id="trip-form">
+          <input type="text" id="destination" placeholder="Destination" required />
+          <input type="date" id="date" required />
+          <textarea id="note" placeholder="Notes (e.g., what to pack)" rows="3"></textarea>
+          <button type="submit">Add Trip</button>
+        </form>
+      </div>
+      <div class="right" id="map">
+        <h2></h2>
+        <div ></div>
+        
+        <!-- Leaflet JS -->
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <!-- Your Custom JS -->
+        <script src="trip.js"></script>
+      </div>
+      
+    </div>
+    <div>
+      <button onclick="gotoflight()" id="fbutton">Search Flights  ✈️</button>
+      
+    </div>
+    
+    
+  </div>
+</body>
+</html>

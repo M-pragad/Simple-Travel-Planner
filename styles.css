@@ -1,0 +1,176 @@
+ body {
+  background-image: url(garrett-parker-DlkF4-dbCOU-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  
+}
+
+.container ,.ptrips{
+  max-width: 1000;
+  margin: 30px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.9);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: black;
+
+}
+
+h1, h2 {
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+  -webkit-text-stroke: 0.1px black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  background-color: rgba(0,87,255,0.5);
+  backdrop-filter: blur(10px);
+  color: white;
+  border: none;
+  cursor: pointer;
+
+}
+
+button:hover {
+  background: linear-gradient(132deg, rgb(0, 48, 143) 0.00%, rgb(0, 255, 255) 100.00%);
+}
+
+#trip-list {
+  list-style: none;
+  padding: 0;
+}
+
+#trip-list li {
+  background: #f1f8ff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  border-left: 20px solid white;
+  background-color: rgba(255,255,255,0.5);
+}
+
+#destination{
+  background-color: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0,0,0,0.9);
+  color: black;
+}
+
+#date{
+  background-color: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0,0,0,0.9);
+  color: black;
+}
+
+#note{
+  background-color: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0,0,0,0.9);
+  color: black;
+}
+
+.right-panel {
+  width: 400px;
+  height: 800px;
+  background-color: black;
+  margin:auto;
+  border-radius: 8px;
+  /* overflow-y: auto; */
+}
+
+#map {
+  height: 600px;
+  width: 1200px;
+  border: 2px solid #ccc;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right:auto;
+  border-radius: 8px;
+}
+
+.top{
+  border: 1px solid rgba(0,0,0,0,0.9);
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(255,255,255,0.1);
+  padding: 10px;
+}
+
+#fbutton{
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  backdrop-filter: blur(10px);
+  color: white;
+  border: 1px solid white;
+  cursor: pointer; 
+  text-align: center;
+  margin-left: 795px; 
+  height: 60px;
+  width: 400px;
+  border-radius: 0;
+  font-size: 25px;;
+}
+
+#headelement{
+  height: 100px;
+  width: 1950px;
+  border: 2px solid #ccc;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right:auto;
+  padding:10px;
+  padding-top: 50px;
+  padding-left: 30px;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  text-align: right;
+  
+  font-size: 60px;
+  font-weight: 600;
+  color: black 
+}
+
+#weathers{
+  background: linear-gradient(132deg, rgb(251, 165, 116) 0.00%, rgb(216, 245, 251) 100.00%);
+  backdrop-filter: blur(10px);
+  color: white;
+  border: 1px solid white;
+  cursor: pointer; 
+  text-align: center;
+  padding-top: auto;
+  padding-bottom: auto;
+  margin-left: 400px; 
+  margin-right: 100px;
+  height: 60px;
+  width: 400px;
+  border-radius: 5%;
+  font-size: 30px;
+  font-weight: 60;
+}

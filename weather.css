@@ -1,0 +1,47 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(132deg, rgb(249, 206, 183) 0.00%, rgb(173, 209, 242) 100.00%);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .container {
+    padding: 40px;
+    max-width: 500px;
+    margin: auto;
+    background: linear-gradient(132deg, rgb(251, 165, 116) 0.00%, rgb(216, 245, 251) 100.00%);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 80px;
+  }
+  
+  input {
+    padding: 10px;
+    width: 60%;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(132deg, rgb(0, 48, 143) 0.00%, rgb(0, 255, 255) 100.00%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0277bd;
+  }
+  
+  #weather-result {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  

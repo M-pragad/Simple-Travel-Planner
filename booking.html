@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flight Search - Amadeus API</title>
+  <link rel="stylesheet" href="style4flight.css">
+  <button onclick="indexpage()">go back</button>
+</head>
+<body>
+  <h2>Search Flights</h2>
+  <form id="flight-form">
+    <label for="from">&nbsp&nbsp&nbsp&nbspFrom:</label>
+    <input list="froms" id="from" placeholder="From (e.g. DEL)" required>
+    <datalist id="froms">
+        <option value="DEL">
+        <option value="BOM">
+        <option value="MAA">
+        <option value="HYD">
+        <option value="BLR">
+        <option value="GOI">
+        <option value="MUM">
+        <option value="CHE">
+        <option value="PNQ">
+        <option value="ATQ">
+        <option value="JAI">
+        <option value="KUL">
+        <option value="LKO">
+        <option value="NAG">
+        <option value="TIR">
+        <option value="PUN">
+        <option value="BOM">
+        <option value="BBI">
+        <option value="HYD">
+        <option value="BLR">
+        <option value="GOI">
+        <option value="MUM">
+        <option value="CHE">
+        <option value="PNQ">
+        <option value="ATQ">
+        <option value="JAI">
+        <option value="KUL">
+        <option value="LKO">
+        <option value="NAG">
+        <option value="TIR">
+        <option value="PUN">
+    </datalist>
+    <label for="to">&nbsp&nbsp&nbsp&nbspTo:</label>
+    <input list="tos" id="to" placeholder="To (e.g. BOM)" required>
+    <datalist id="tos">
+        <option value="DEL">
+        <option value="BOM">
+        <option value="MAA">
+        <option value="HYD">
+        <option value="BLR">
+        <option value="GOI">
+        <option value="MUM">
+        <option value="CHE">
+        <option value="PNQ">
+        <option value="ATQ">
+        <option value="JAI">
+        <option value="KUL">
+        <option value="LKO">
+        <option value="NAG">
+        <option value="TIR">
+        <option value="PUN">
+        <option value="BOM">
+        <option value="BBI">
+        <option value="HYD">
+        <option value="BLR">
+        <option value="GOI">
+        <option value="MUM">
+        <option value="CHE">
+        <option value="PNQ">
+        <option value="ATQ">
+        <option value="JAI">
+        <option value="KUL">    
+        <option value="LKO">
+        <option value="NAG">
+        <option value="TIR">
+        <option value="PUN">
+    </datalist>
+    <label for="departure-date"> &nbsp&nbsp&nbsp&nbsp Departure Date:</label>
+    <input type="date" id="departure-date" required>&nbsp&nbsp&nbsp
+    <button type="submit">Search</button>
+  </form>
+  <h3>Flight Results:</h3>
+  <ul id="results"></ul>
+
+  <script src="flightapi.js"></script>
+  
+</body>
+</html>
